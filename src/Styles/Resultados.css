@@ -1,0 +1,42 @@
+.text_resultados{
+  position: absolute;
+width: 228px;
+height: 48px;
+left: 20px;
+top: 130px;
+font-family: Poppins;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+}
+
+.filtrar{
+  position: absolute;
+width: 105px;
+height: 33px;
+left: 20px;
+top: 238px;
+}
+
+.filtro1{
+position: absolute;
+height: 172px;
+left: 20px;
+top: 284px;
+}
+
+.filtro2{
+  position: absolute;
+  width: 79px;
+  height: 172px;
+  left: 20px;
+  top: 486px;
+  }
+
+  .filtro3{
+    position: absolute;
+    width: 79px;
+    height: 172px;
+    left: 20px;
+    top: 688px;
+    }
