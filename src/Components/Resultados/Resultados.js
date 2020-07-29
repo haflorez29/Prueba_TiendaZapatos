@@ -48,7 +48,9 @@ const Resultados = () => {
           <Card></Card>
           <Card></Card>
           <Card></Card>
-          <Pagination></Pagination>          
+          <div className="d-flex justify-content-center">
+          <Pagination></Pagination>   
+          </div>       
         </div>
       </div>
     </div>
