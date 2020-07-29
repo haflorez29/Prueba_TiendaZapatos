@@ -42,3 +42,50 @@ code {
   max-width: 190px;
   margin-right: 10px;
 }
+.poppins22 {
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 33px;
+}
+
+.poppins32{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;  
+}
+.poppins18 {
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+}
+
+.tinos14{
+  font-family: Tinos;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 16px;
+}
+
+.poppins18bold{
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 27px;
+}
+
+.poppins22bold{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  text-decoration-line: underline;
+}
