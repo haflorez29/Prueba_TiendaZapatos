@@ -1,31 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
+import "../../Styles/Pagination.css"
 
 const Pagination = () => {
+  const [count, setCount] = useState()
+
   return (
     <nav aria-label="Search results pages">
-      <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
+      <ul className="pagination">
+        <li className="page-item">
+          <a className="page-link colornumbers  poppins22" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
+        <li className="page-item">
+          <a className="page-link colornumbers poppins22" href="#">
             1
           </a>
         </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
-            2
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
-            3
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
+        <li className="page-item">
+          <a className="page-link colornumbers  poppins22" href="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
