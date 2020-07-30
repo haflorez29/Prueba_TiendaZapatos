@@ -1,0 +1,35 @@
+#colorletra {
+  color:#22780D ;
+}
+
+.colornav {
+  background-color: #F2F6EF;
+}
+
+.btnbuscar {
+  border: 1px solid transparent;
+  background-color: #78A825;
+  width: 55px;
+}
+
+.iconobuscar {
+  color: white;
+}
+
+.contenedorbtn {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#inputbusqueda {
+  width: 270px;
+}
+
+.btncompras {
+  color: #22780D;
+}
+
+.btncontenenedor {
+  border: 1px solid #22780D;
+  border-radius: 50%;
+}

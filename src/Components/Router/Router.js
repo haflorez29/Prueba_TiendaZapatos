@@ -6,6 +6,8 @@ import Pago1 from './Pago/Pago1'
 import Pago2 from './Pago/Pago2'
 import Pago3 from './Pago/Pago3'
 import Confirmacion from './Pago/Confirmacion'
+import Resultados from '../Resultados/Resultados'
+import DetalleProducto from '../DetalleProducto/DetalleProducto'
 
 const Router = () =>(
   <BrowserRouter>
@@ -16,6 +18,8 @@ const Router = () =>(
     <Route path='/Pago2' component={Pago2} />
     <Route path='/Pago3' component={Pago3} />
     <Route path='/Confirmacion' component={Confirmacion} />
+    <Route exact path='/Resultados' component={Resultados}></Route>
+    <Route exact path='/DetalleProducto' component={DetalleProducto}></Route>
     </Switch>  
   </BrowserRouter>
 )
