@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../images/Logo.png";
+import logo from "../../Images/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
