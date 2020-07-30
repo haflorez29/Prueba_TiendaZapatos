@@ -1,0 +1,13 @@
+.imagencarusel{
+  height: 65vh;
+}
+
+.contenedor_volver {
+  border: 1px solid #22780D;
+  border-radius: 50%;
+  background-color: #22780D;
+  color: rgba(255, 255, 255, 0.5);
+  transform: scale(3);
+}
+
+

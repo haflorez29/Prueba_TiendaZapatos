@@ -1,0 +1,428 @@
+{
+    "zapatos":[
+        {"nombre":"converse",
+         "precio":70000,
+         "imagen":"https://i.ibb.co/nwXjQzc/converse.jpg",
+         "accesorios":"Cordones, llavero",
+         "material":"Tela y sintético",
+         "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+    },
+    {"nombre":"bhrama",
+        "precio":170000,
+        "imagen":"https://i.ibb.co/Wz0YfgX/brama.jpg",
+        "accesorios":"Cordones, llavero",
+        "material":"Cuero, tela y sintético",
+        "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+   },
+   {"nombre":"bota",
+    "precio":70000,
+    "imagen":"https://i.ibb.co/N9HkHPD/bota.jpg",
+    "accesorios":"Cordones",
+    "material":"Cuero",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+},{"nombre":"bota caña alta",
+    "precio":70000,
+    "imagen":"https://i.ibb.co/K7tvF10/bota-alta.jpg",
+    "accesorios":"Cordones",
+    "material":"Cuero",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+},{"nombre":"zapatilla negro",
+    "precio":170000,
+    "imagen":"https://i.ibb.co/c3DMwjg/zapatilla2.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+    "comentarios":[
+       {"nombre_cliente":"Sed pharetra ",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+       "opiniones":[
+           {"nombre_cliente":"Aliquam neque tortor",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+           }
+       ]}
+   ]
+},
+{"nombre":"zapatilla gris",
+   "precio":150000,
+   "imagen":"https://i.ibb.co/R7y9PYt/zapatilla1.jpg",
+   "accesorios":"Cordones, llavero",
+   "material":"Tela y sintético",
+   "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+},{"nombre":"zapatilla azul amarillo",
+    "precio":150000,
+    "imagen":"https://i.ibb.co/PTsC357/zapatilla3.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"zapatilla negro naranja",
+    "precio":120000,
+    "imagen":"https://i.ibb.co/Q6yNNZ2/zapatilla4.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"zapatilla gris blanco",
+    "precio":120000,
+    "imagen":"https://i.ibb.co/CBkmfnb/zapatilla5.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"zapatilla negro rojo",
+    "precio":120000,
+    "imagen":"https://i.ibb.co/86LDTY8/zapatilla6.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"zapatilla negro sin cordones",
+    "precio":110000,
+    "imagen":"https://i.ibb.co/86LDTY8/zapatilla6.jpg",
+    "accesorios":"Llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"zapatilla gris nike",
+    "precio":110000,
+    "imagen":"https://i.ibb.co/LZ0dhkH/zapatilla8.jpg",
+    "accesorios":"Cordones, Llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"zapatilla gris negro",
+    "precio":110000,
+    "imagen":"https://i.ibb.co/FW9BwXz/zapatilla9.jpg",
+    "accesorios":"Cordones, Llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"tenis gris",
+    "precio":80000,
+    "imagen":"https://i.ibb.co/Zd4Z830/teni1.jpg",
+    "accesorios":"Cordones, Llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"tenis puma",
+    "precio":110000,
+    "imagen":"https://i.ibb.co/tm9qxch/teni2.jpg",
+    "accesorios":"Cordones, Llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"tenis adidas",
+    "precio":170000,
+    "imagen":"https://i.ibb.co/pjNdzw9/teni3.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+    "comentarios":[
+       {"nombre_cliente":"Sed pharetra ",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+       "opiniones":[
+           {"nombre_cliente":"Aliquam neque tortor",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+           }
+       ]}
+   ]
+},
+{"nombre":"zapatilla negro s",
+   "precio":150000,
+   "imagen":"https://i.ibb.co/5hZTkk3/teni4.jpg",
+   "accesorios":"Cordones, llavero",
+   "material":"Tela y sintético",
+   "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+},{"nombre":"zapato sueco cuero",
+    "precio":150000,
+    "imagen":"https://i.ibb.co/6FzwTWz/sueco.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"zapato sueco lana",
+    "precio":120000,
+    "imagen":"https://i.ibb.co/jvfJtfD/sueco1.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+         "comentarios":[
+            {"nombre_cliente":"Sed pharetra ",
+            "calificacion":"",
+            "fecha_publicacion":"",
+            "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+            "opiniones":[
+                {"nombre_cliente":"Aliquam neque tortor",
+                    "calificacion":"",
+                    "fecha_publicacion":"",
+                    "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+                }
+            ]}
+        ]
+ },{"nombre":"sandalia",
+    "precio":150000,
+    "imagen":"https://i.ibb.co/TR8Q0L3/sandalia.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+ },{"nombre":"moccacin caramelo",
+    "precio":70000,
+    "imagen":"https://i.ibb.co/q5r1phD/mocacin1.jpg",
+    "accesorios":"Cordones",
+    "material":"Cuero",
+    "Descripción":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas",
+    "comentarios":[
+       {"nombre_cliente":"Nunc sed turpis ac",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"Sed elementum diam id augue bibendum, in commodo nibh convallis. Nullam risus nunc, ultrices vel posuere vitae, suscipit tincidunt odio.",
+       "opiniones":[
+           {"nombre_cliente":"Nunc sed turpis ac",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":" Morbi blandit nisi non ligula pharetra, ut sodales dolor efficitur. Morbi rutrum ornare risus, et pellentesque augue mollis pulvinar."
+           }
+       ]}
+   ]
+},{"nombre":"moccacin café",
+    "precio":170000,
+    "imagen":"https://i.ibb.co/Mf7gLhQ/mocacin.jpg",
+    "accesorios":"Cordones, llavero",
+    "material":"Tela y sintético",
+    "Descripción":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo efficitur commodo.",
+    "comentarios":[
+       {"nombre_cliente":"Sed pharetra ",
+       "calificacion":"",
+       "fecha_publicacion":"",
+       "comentario":"In sagittis eros sed felis mattis sagittis. Integer aliquet pulvinar leo. Morbi porta consequat sapien sed rhoncus. Praesent scelerisque consectetur arcu a commodo.",
+       "opiniones":[
+           {"nombre_cliente":"Aliquam neque tortor",
+               "calificacion":"",
+               "fecha_publicacion":"",
+               "comentario":"Mauris sed magna eu diam vulputate malesuada. Vivamus non odio in velit aliquet consequat. Nullam ornare, libero vitae fermentum egestas"
+           }
+       ]}
+   ]
+}
+
+    ]
+}
