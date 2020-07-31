@@ -3,11 +3,14 @@ import Detalle from './Detalle'
 import Galeria from './Galeria'
 
 const DetalleProducto = (state) => {
-    console.log(state)
+    // console.log(state)
 
+    const info = state.location.state.state
+    console.log(info)
+    
     return(
         <div>
-            <Detalle />
+            <Detalle info={info} />
             <Galeria />
         </div>
     )
