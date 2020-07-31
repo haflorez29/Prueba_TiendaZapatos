@@ -4,6 +4,7 @@ import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import '../Styles/App.css';
+import Footer from '../Components/Footer';
 
 function App() {
   const [zapatos, setZapatos] = useState([{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}])
