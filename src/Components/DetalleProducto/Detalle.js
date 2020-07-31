@@ -9,7 +9,8 @@ import detalle_zapato from './detalle_zapato.jpg'
 import detalle_zapato2 from './detalle_zapato2.jpg'
 import "../../Styles/Detalle.css";
 
-const Detalle = () =>{
+const Detalle = ({info}) =>{
+    console.log(info)
     return(
         <section>
             <Card>

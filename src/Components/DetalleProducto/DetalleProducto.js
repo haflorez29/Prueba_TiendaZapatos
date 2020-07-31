@@ -5,28 +5,15 @@ import Descripcion from './Descripcion'
 import Nabvar from '../Share/Nav'
 import OpinionesClientes from './OpinionesClientes'
 
-const DetalleProducto = () => {
+const DetalleProducto = (state) => {
+    // console.log(state)
 
-    const [zapatos, setZapatos] = useState({})
-
-    useEffect(() => {
-        
-        getZapatos()
-    },[])
-
-    const getZapatos = async () => {
-        const data = await fetch('https://api-jsonserver-now.vercel.app/db.json')
-        const dataZapatos = await data.json()
-        setZapatos(zapatos)
-        console.log(dataZapatos);
-    }
-    // console.log(zapatos)
-
+    const info = state.location.state.state
+    console.log(info)
+    
     return(
         <div>
-            <Nabvar />
-            <Detalle />
-            <Galeria zapatos={zapatos}/>
+            <Detalle info={info} />
             <Galeria />
             <Descripcion />
             <OpinionesClientes />

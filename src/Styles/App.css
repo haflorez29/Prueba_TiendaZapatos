@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@700&display=swap');
+
+.titlecarrito{
+    font-family: 'Open Sans', sans-serif;
+}
+.textcarrito{
+    font-family: 'Mulish', sans-serif;
+}
+.img_zapatos{
+    height: fit-content;
+    float: left;
+}
+.linea{
+    width: 200px;
+    height: 1px;
+    background-color: green;
+}
+.circle{
+    width: 28px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+.icono{
+    transform: scale(2);
+    margin-right: 10px;
+}
+.m_checkbox{
+    margin: 15px;
+}
