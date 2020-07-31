@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../images/Logo.png";
+import logo from "../../Images/Logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -26,9 +26,10 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse " id="navbarSupportedContent">
         <div className="d-flex flex-column col-12">
+        
           <div className="d-flex justify-content-between col-12 p-0">
             <div className="d-flex p-0 col-6">
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="/">
                 <img src={logo} Alt="logo"></img>
               </a>
               <form className="form-inline my-2 my-lg-0 ">
@@ -63,27 +64,27 @@ const Navbar = () => {
           </div>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link poppins22bold " href="#" id="colorletra">
+              <a className="nav-link poppins22bold " href="/" id="colorletra">
                 Catalogo <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " href="#" id="colorletra">
+              <a className="nav-link poppins22 " href="/" id="colorletra">
                 Niños <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="#">
+              <a className="nav-link poppins22 " id="colorletra" href="/">
                 Caballero <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="#">
+              <a className="nav-link poppins22 " id="colorletra" href="/">
                 Deportivo<span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="#">
+              <a className="nav-link poppins22 " id="colorletra" href="/">
                 Regalos <span className="sr-only">(current)</span>
               </a>
             </li>
