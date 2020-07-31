@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Nav from '../Components/Share/Nav'
 import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 import '../Styles/App.css';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       // console.log(res.data.zapatos)
       const data = res.data.zapatos;
       if (data !== null) {
-        setZapatos(data        );
+        setZapatos(data);
       }else{
         console.log("");
       }
@@ -21,23 +22,35 @@ function App() {
   },[]);
 
   console.log(zapatos[2]) 
+  const b = zapatos.filter((item, index) => index <= 5);
 
   return (
     <div className="App container-fluid">
       <Nav></Nav>
       <Carusel></Carusel>
-      <div>
+      <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
-        {zapatos.map((item) =>{
+        {zapatos.map((item)=>{
+          if(item.descuento == "promocion"){
           return(            
             <React.Fragment>
-                <img src={item.imagen}alt="name"></img>           
+                <img src={item.imagen}alt={item.nombre} className="scroll"></img>           
             </React.Fragment>
           )
-        })}
-      
+        }})
+      }     
         <h3 className="poppins32">Otros Usuarios Compraron</h3>
-        <img src="..." alt="name"></img>
+        {b.map((item)=>{
+          return(
+            <Link
+            to={{
+              pathname: '/DetalleProducto',
+              state: { state:item },
+            }}>
+            <img src={item.imagen} alt="name"></img>
+            </Link>
+          )
+        })}          
         </div>       
     </div>
   );
