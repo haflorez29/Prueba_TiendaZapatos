@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faCheck, faMoneyBillWave, faGift } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
 import { faCcVisa, faCcMastercard, faCcPaypal } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../../../Images/platzitransparente.png";
+import Logo from "../../../images/platzitransparente.png";
 import { Link } from 'react-router-dom';
 
 class Pago2 extends Component {
