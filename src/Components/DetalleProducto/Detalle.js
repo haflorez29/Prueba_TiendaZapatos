@@ -7,7 +7,7 @@ import Col from  'react-bootstrap/Col'
 import { Button } from 'react-bootstrap';
 import detalle_zapato from './detalle_zapato.jpg'
 import detalle_zapato2 from './detalle_zapato2.jpg'
-
+import "../../Styles/Detalle.css";
 
 const Detalle = () =>{
     return(
@@ -16,7 +16,7 @@ const Detalle = () =>{
                 <Card.Body>
                     <Container fluid>
                         <Row>
-                            <Col className='column-small' fluid>
+                            <Col className='column-small poppins22' fluid>
                                 <Card.Img src={ detalle_zapato } className='img-small' /><br />
                                 <Card.Img src={ detalle_zapato } className='img-small' /><br />
                                 <Card.Img src={ detalle_zapato } className='img-small' /><br />
@@ -28,14 +28,14 @@ const Detalle = () =>{
                                 <Card.Img variant="top" src={ detalle_zapato2 }  />
                             </Col>
                             <Col className='column-text' fluid>
-                                <Card.Title>Nombre de Producto</Card.Title>
-                                <Card.Subtitle>Marca</Card.Subtitle>
-                                <Card.Text>
+                                <Card.Title className='poppins22'>Nombre de Producto</Card.Title>
+                                <Card.Subtitle className='tinos14' style={{padding:'0px 0px 20px 0px'}}>Marca</Card.Subtitle>
+                                <Card.Text className='tinos14' style={{padding:'0px 0px 20px 0px'}}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus, ante nec egestas malesuada, lacus nulla imperdiet massa, non sodales dolor augue vitae enim. 
                                 </Card.Text>
-                                <Card.Link href="#" style={{color:'#78A825'}}>Ver opiniones del cliente</Card.Link>
-                                <Card.Text>$224.000</Card.Text>
-                                <Card.Text>Ver Tallas</Card.Text>
+                                <Card.Link href="#" className='tinos14 link-opiniones' >Ver opiniones del cliente</Card.Link>
+                                <Card.Text className='poppins18' style={{padding:'0px 0px 20px 0px'}}>$224.000</Card.Text>
+                                <Card.Text className='tinos14'>Ver Tallas</Card.Text>
                                 <Form.Control as="select">
                                     <option>35</option>
                                     <option>36</option>
@@ -45,8 +45,8 @@ const Detalle = () =>{
                                 </Form.Control>
                             </Col>
                             <Col className='column-btn'>
-                                <Button className='buttons'>Agregar al carrito</Button>
-                                <Card.Text>Agregar a WishList</Card.Text>
+                                <Button className='buttons poppins18bold'>Agregar al carrito</Button><br />
+                                <Card.Text className='tinos14' style={{color:'#78A825'}} >Agregar a WishList</Card.Text>
                             </Col>
                         </Row>
                     </Container>
