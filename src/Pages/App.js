@@ -29,9 +29,9 @@ function App() {
       <div>
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item) =>{
-          return(
+          return(            
             <React.Fragment>
-            <img src={item.imagen}alt="name"></img>
+                <img src={item.imagen}alt="name"></img>           
             </React.Fragment>
           )
         })}
