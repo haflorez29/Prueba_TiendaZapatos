@@ -1,0 +1,47 @@
+.buttons {
+    background: #78A825;
+    border:none;
+    margin-bottom: 15px;
+  }
+  .img-borders {
+    background: #FFFFFF;
+    border: 2px solid #B9B9B9;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  .img-small {
+    width: 87px;
+    border: 1px solid #B9B9B9;
+    margin: 6px;
+  }
+  .img-galeria {
+    max-width: 300px;
+    border: 1px solid #B9B9B9;
+    margin-right: 6px;
+  }
+  .column-small {
+    max-width: 127px;
+    margin-right: 10px;
+  }
+  .column-text {
+    margin: 0px 10px 0px 10px;
+  }
+  .column-btn {
+    max-width: 210px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .link-opiniones{
+    color:#78A825;
+    margin-bottom:20px;
+  }
+  .img-opinion{
+    margin-left: 40px;
+    text-align: center;
+
+    top: 0%;
+    bottom: -1.15%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    max-width: 60px;
+    max-height: 68px;
+  }

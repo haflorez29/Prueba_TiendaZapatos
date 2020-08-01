@@ -1,28 +1,23 @@
 import React, {useState, useEffect} from 'react';
 import Detalle from './Detalle'
 import Galeria from './Galeria'
+import Descripcion from './Descripcion'
+import Nabvar from '../Share/Nav'
+import OpinionesClientes from './OpinionesClientes'
 
-const DetalleProducto = () => {
+const DetalleProducto = (state) => {
+    // console.log(state)
 
-    const [zapatos, setZapatos] = useState(null)
-
-    useEffect(() => {
-        getZapatos()
-        
-    },[])
-
-    const getZapatos = async () => {
-        const data = await fetch('https://heroku-api.vercel.app/db.json')
-        const dataZapatos = await data.json()
-        setZapatos(dataZapatos)
-        console.log(dataZapatos);
-    }
-    console.log(zapatos)
-
+    const info = state.location.state.state
+    console.log(info)
+    
     return(
         <div>
-            <Detalle />
+            <Detalle info={info} />
             <Galeria />
+            <Descripcion />
+            <OpinionesClientes />
+
         </div>
     )
 }

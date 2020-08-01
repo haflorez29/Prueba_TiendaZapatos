@@ -4,7 +4,7 @@ import Navbar from '../../Share/Nav';
 import Footer from '../../Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import Zapatos1 from "../../../Images/1.png";
+import Zapatos1 from "../../../images/img1.png";
 import { Link } from 'react-router-dom';
 
 class CarritodeCompra extends Component {
