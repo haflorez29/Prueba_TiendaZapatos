@@ -4,7 +4,7 @@ import Logo from "../Images/platzitransparente.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-light pt-4">
+    <footer className="bg-light pt-4 sticky-bottom">
       <div className="container-fluid text-center text-md-left">
         <div className="row">
             <div className="col-md-3 mt-md-0 mt-3">

@@ -4,7 +4,7 @@ import Footer from '../../Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faCheck, faMoneyBillWave, faGift } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
-import { faCcVisa, faCcMastercard, faCcPaypal } from "@fortawesome/free-brands-svg-icons";
+import { faCcVisa, faCcMastercard, faCcPaypal, faCcAmex } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../../../Images/platzitransparente.png";
 import { Link } from 'react-router-dom';
 
@@ -16,55 +16,56 @@ class Pago2 extends Component {
   render() {
     return (
       <div>
-        <div>
-          <img src={Logo} alt="logo"></img>
-        </div>
-        <div className="d-flex justify-content-center align-items-center mb-3 mt-3">
-          <div className="circle">
-            <FontAwesomeIcon icon={faCar}></FontAwesomeIcon>
+        <nav class="navbar navbar-light bg-light">
+          <a className="navbar-brand" href="/">
+            <img src={Logo} alt="logo"></img>
+          </a>
+          <div className="iconos_nav">
+          <div className="d-flex align-items-center">
+            <div className="circle_active">
+              <FontAwesomeIcon icon={faCar}></FontAwesomeIcon>
+            </div>
+            <div className="linea"></div>
+            <div className="circle_active">
+              <FontAwesomeIcon icon={faCreditCard}></FontAwesomeIcon>
+            </div>
+            <div className="linea"></div>
+            <div className="circle">
+              <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
+            </div>
           </div>
-          <div className="linea"></div>
-          <div className="circle">
-            <FontAwesomeIcon icon={faCreditCard}></FontAwesomeIcon>
           </div>
-          <div className="linea"></div>
-          <div className="circle">
-            <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
-          </div>
-        </div>
+        </nav>
+        <div className="mt-5 ml-4">
         <h1>Tus tarjetas de crédito</h1>
-        <h4>Tarjeta de crédito</h4>
-        <div className="d-flex flex-row">
-            <div className="">
-            <label>
+        <h4 className="mt-4">Tarjeta de crédito</h4>
+        </div>
+        <div className="d-flex flex-row ml-4 mt-3">
+        <div className="col-3 input-group">
+          <label className="mr-1">
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon
               className="icono"
               icon={faCcVisa}
             ></FontAwesomeIcon>
           </label>
-            </div>
-            <div className="col-4 input-group">
-            <input
+          <input
               type="text"
               className="form-control"
               placeholder="Recipient's username"
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
             />
               <button
                 className="btn btn-success"
-                type="button"
-                id="button-addon2"
+                style={{ height: "fit-content" }}
               >
                 Button
               </button>
         </div>
-        <div className="col-2 text-center">
+        <div className="col-3 text-center">
             <h4>Nombre</h4>
             <p>Daniela Garza</p>
         </div>
-        <div className="col-2 text-center">
+        <div className="col-3 text-center">
             <h4>Vencimiento</h4>
             <p>Fecha</p>
         </div>
@@ -75,9 +76,10 @@ class Pago2 extends Component {
           <p>El pedido en un click no está disponible</p>
         </div>
         </div>
-        <div className="">
+        <div className="ml-4 mt-4">
             <h4>Más opciones de pago</h4>
-            <h5>Tarjetas de crédito o débito</h5>
+            <h5 className="mt-3">Tarjetas de crédito o débito</h5>
+            <div className="row">
             <label>
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon
@@ -85,7 +87,18 @@ class Pago2 extends Component {
               icon={faCcMastercard}
             ></FontAwesomeIcon>
             </label>
-            <br></br>
+            <label>
+            <input type="checkbox" className="m_checkbox" />
+            <FontAwesomeIcon
+              className="icono"
+              icon={faCcAmex}
+            ></FontAwesomeIcon>
+            </label>
+            </div>
+            <a href="/">Agregar tarjeta</a>
+            <div className="linea_metodos_pago"></div>
+            <h5 className="mt-3">Otros métodos de pago</h5>
+            <div className="row">
             <label>
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon
@@ -93,7 +106,6 @@ class Pago2 extends Component {
               icon={faCcPaypal}
             ></FontAwesomeIcon>
             </label>
-            <br></br>
             <label>
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon
@@ -101,11 +113,11 @@ class Pago2 extends Component {
               icon={faMoneyBillWave}
             ></FontAwesomeIcon>
             </label>
-            <br></br>
-            <a href="/">Agregar tarjeta</a>
+            </div>
         </div>
-        <div className="d-block">
-            <h5>Tarjetas de regalo</h5>
+        <div className="ml-4 mb-3">
+        <div className="linea_metodos_pago"></div>
+            <h5 className="mt-3">Tarjetas de regalo</h5>
             <label>
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon

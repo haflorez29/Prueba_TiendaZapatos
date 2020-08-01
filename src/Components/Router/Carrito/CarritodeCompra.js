@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../../Styles/App.css";
+import Navbar from '../../Share/Nav';
 import Footer from '../../Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -9,17 +10,24 @@ import { Link } from 'react-router-dom';
 class CarritodeCompra extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      nombre: "",
+      marca: "",
+      descripcion: "",
+      precio: "",
+      imagen: ""
+    };
   }
   render() {
     return (
       <div>
+        <Navbar></Navbar>
         <h1 className="">Texto 34</h1>
         <div className="d-flex flex-row">
         <img
           src={Zapatos1}
           alt="Converse"
-          className="img_zapatos"
+          className=""
         ></img>
         <div className="col-4">
         <h2 className="">Nombre de producto</h2>
@@ -46,9 +54,9 @@ class CarritodeCompra extends Component {
             </label>
         </div>
         <div>
-            <button>
+            <a href="/">
             <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
-            </button>
+            </a>
         </div>
         <div className="m-3">
             <p>Subtotal: $464</p>

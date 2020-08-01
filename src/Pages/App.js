@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Styles/App.css';
-import Footer from '../Components/Footer';
+import CarritodeCompra from '../Components/Router/Carrito/CarritodeCompra';
+
 
 function App() {
   return (
     <div className="App">
       <p>home</p>
-      <Footer></Footer>
+      <CarritodeCompra></CarritodeCompra>
       <p>home</p>      
     </div>
   );
