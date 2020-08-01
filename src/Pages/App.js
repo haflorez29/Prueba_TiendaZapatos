@@ -4,7 +4,6 @@ import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import '../Styles/App.css';
-import Footer from '../Components/Footer';
 
 function App() {
   const [zapatos, setZapatos] = useState([{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}])
@@ -32,7 +31,7 @@ function App() {
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item)=>{
-          if(item.descuento == "promocion"){
+          if(item.descuento === "promocion"){
           return(            
             <React.Fragment>
                 <img src={item.imagen}alt={item.nombre} className="scroll"></img>           
