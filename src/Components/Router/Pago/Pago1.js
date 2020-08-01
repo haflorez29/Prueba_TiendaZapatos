@@ -4,13 +4,8 @@ import Footer from "../../Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
-<<<<<<< HEAD
 import Logo from "../../../Images/platzitransparente.png";
 import { Link } from "react-router-dom";
-=======
-import Logo from "../../../images/platzitransparente.png";
-import { Link } from 'react-router-dom';
->>>>>>> master
 
 class Pago1 extends Component {
   constructor(props) {
