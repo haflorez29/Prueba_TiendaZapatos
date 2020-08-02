@@ -22,17 +22,18 @@ function App() {
     });
   },[]);
 
-  console.log(zapatos[2]) 
+  // console.log(zapatos[2]) 
   const b = zapatos.filter((item, index) => index <= 5);
+  // console.log(b)
 
   return (
     <div className="App container-fluid">
-      <Nav></Nav>
+      <Nav state={zapatos}></Nav>
       <Carusel></Carusel>
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item)=>{
-          if(item.descuento == "promocion"){
+          if(item.descuento === "promocion"){
           return(            
             <React.Fragment>
                 <img src={item.imagen}alt={item.nombre} className="scroll"></img>           
