@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../../Styles/App.css";
 import Footer from '../../Footer';
-import Logo from '../../../Images/Logo.png';
+import Logo from '../../../images/Logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
