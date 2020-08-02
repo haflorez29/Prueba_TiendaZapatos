@@ -5,7 +5,11 @@ import Pagination from "./Pagination"
 import Nabvar from '../Share/Nav'
 import "../../Styles/Resultados.css";
 
-const Resultados = () => {
+const Resultados = (state) => {
+  const busca= state.location.state.busca
+  const arreglo = state.location.state.state
+  console.log(state.location.state)
+
   return (
     <div className="container-fluid ">
       <Nabvar></Nabvar>
@@ -42,12 +46,28 @@ const Resultados = () => {
             ></Filtro>
           </div>
         <div className="card-result">
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+        {arreglo.map((item)=>{
+          const nombre = item.nombre.toLowerCase()
+          const material = item.material.toLowerCase()
+          const genero = item.genero.toLowerCase()
+          const categoria = item.categoria.toLowerCase()
+          const descuento = item.descuento.toLowerCase()
+          const buscar = busca.toLowerCase()
+          if(nombre === buscar || material === buscar || genero === buscar || categoria === buscar || descuento === busca){
+          return(     
+            // console.log(item.nombre)       
+            <React.Fragment>
+               <Card
+               nombre = {item.nombre}
+               precio = {item.precio}
+               imagen= {item.imagen}
+               descripcion ={item.Descripción}
+               item = {item}
+               ></Card>                 
+            </React.Fragment>
+          )
+        }})
+      }     
           <div className="d-flex justify-content-center">
           <Pagination></Pagination>   
           </div>       
