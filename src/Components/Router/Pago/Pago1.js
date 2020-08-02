@@ -4,7 +4,7 @@ import Footer from "../../Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
-import Logo from "../../../Images/platzitransparente.png";
+import Logo from "../../../images/platzitransparente.png";
 import { Link } from "react-router-dom";
 
 class Pago1 extends Component {
