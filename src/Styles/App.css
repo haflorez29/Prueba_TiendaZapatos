@@ -6,9 +6,9 @@
 .textcarrito{
     font-family: 'Mulish', sans-serif;
 }
-.img_zapatos{
-    height: fit-content;
-    float: left;
+.img_envios{
+    width: 80%;
+    margin: 10px;
 }
 .linea{
     width: 200px;
@@ -21,10 +21,32 @@
     border-radius: 50%;
     border: 2px solid green;
 }
+.circle_active{
+    width: 28px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid green;
+    background-color: rgb(147, 223, 147);
+}
 .icono{
     transform: scale(2);
     margin-right: 10px;
 }
 .m_checkbox{
     margin: 15px;
+}
+.iconos_nav{
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.linea_metodos_pago{
+    width: 500px;
+    height: 1px;
+    background-color: green;
+    margin-top: 10px;
+}
+.confirmacion{
+    padding: 5%;
+    text-align: center;
 }

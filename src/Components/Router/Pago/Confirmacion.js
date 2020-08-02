@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../../../Styles/App.css";
 import Footer from '../../Footer';
+import Logo from '../../../images/Logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,13 +13,19 @@ class Confirmacion extends Component {
   render() {
     return (
       <div>
-        <div className="d-flex flex-row justify-content-center">
+         <nav class="navbar navbar-light bg-light">
+          <a className="navbar-brand" href="/">
+            <img src={Logo} alt="logo"></img>
+          </a>
+        </nav>
+        <div className="confirmacion">
+        <div className="d-flex flex-row justify-content-center align-items-center mt-4">
           <h1>Felicitaciones</h1>
-          <div className="circle">
+          <div className="circle_active">
             <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
           </div>
           </div>
-        <div className="text-center">
+        <div className="text-center mt-4 mb-3">
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor
@@ -29,25 +36,26 @@ class Confirmacion extends Component {
             ad minim veniam
           </p>
         </div>
-        <div className="d-flex flex-row text-center">
-        <div>
+        <div className="d-flex flex-row mt-4">
+        <div className="p-3 px-4">
             <h5>Fecha de entrega</h5>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt </p>
             <a href="/">Aprender más</a>
         </div>
-        <div>
+        <div className="p-3 px-4">
             <h5>Manejar orden</h5>
             <button
                 className="btn btn-success"
                 type="button"
                 id="button-addon2"
+                style={{ width: "-webkit-fill-available"}}
               >
                 Ver orden
               </button>
               <a href="/">Ver más detalles</a>
         </div>
-        <div>
+        <div className="p-3 px-4">
             <h5>Fecha de embarque</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt</p>
@@ -55,6 +63,8 @@ class Confirmacion extends Component {
             <p>2 articulos</p>
         </div>
         </div>
+        </div>
+       
         <Footer></Footer>
       </div>
     );

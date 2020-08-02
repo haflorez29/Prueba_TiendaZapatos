@@ -1,41 +1,77 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
 import Container from  'react-bootstrap/Container'
 import Row from  'react-bootstrap/Row'
 import Col from  'react-bootstrap/Col'
 import { Button } from 'react-bootstrap';
-import detalle_zapato from './detalle_zapato.jpg'
-import detalle_zapato2 from './detalle_zapato2.jpg'
+import "../../Styles/Detalle.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faStar,
+    
+  } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 
-const Detalle = () =>{
+const Detalle = ({info}) =>{
+    console.log(info)
+
+    const [datosProducto, setDatosProducto] = useState({
+        imagen: '',
+        nombre: '',
+        Descripción : '',
+        accesorios: '',
+        categoria: '',
+        descuento: ''
+    })
+
+    const [newAdd, setNewAdd] = useState(datosProducto)
+    
+    const handleInputChange = (info) => {
+        console.log(info)
+        setNewAdd({
+            ...datosProducto,
+             
+        })
+    }
+    const addCarrito = ()=> {
+        console.log(newAdd)
+    }
+
     return(
         <section>
             <Card>
                 <Card.Body>
                     <Container fluid>
                         <Row>
-                            <Col className='column-small' fluid>
-                                <Card.Img src={ detalle_zapato } className='img-small' /><br />
-                                <Card.Img src={ detalle_zapato } className='img-small' /><br />
-                                <Card.Img src={ detalle_zapato } className='img-small' /><br />
-                                <Card.Img src={ detalle_zapato } className='img-small' /><br />
-                                <Card.Img src={ detalle_zapato } className='img-small' /><br />
-                                <Card.Img src={ detalle_zapato } className='img-small' />
+                            <Col className='column-small poppins22' fluid>
+                                <Card.Img src={ info.imagen } className='img-small' /><br />
+                                <Card.Img src={ info.imagen } className='img-small' /><br />
+                                <Card.Img src={ info.imagen } className='img-small' /><br />
+                                <Card.Img src={ info.imagen } className='img-small' /><br />
+                                <Card.Img src={ info.imagen } className='img-small' /><br />
+                                <Card.Img src={ info.imagen } className='img-small' />
                             </Col>
                             <Col className='img-borders' >
-                                <Card.Img variant="top" src={ detalle_zapato2 }  />
+                                <Card.Img variant="top" src={ info.imagen }  />
                             </Col>
                             <Col className='column-text' fluid>
-                                <Card.Title>Nombre de Producto</Card.Title>
-                                <Card.Subtitle>Marca</Card.Subtitle>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus, ante nec egestas malesuada, lacus nulla imperdiet massa, non sodales dolor augue vitae enim. 
+                            <Card.Title className='poppins22'>{info.nombre}</Card.Title>
+                            <Card.Subtitle className='tinos14' style={{padding:'0px 0px 20px 0px'}}>{info.marca}</Card.Subtitle>
+                                <Card.Text className='tinos14' style={{padding:'0px 0px 0px 0px'}}>
+                                   {info.Descripción}   
                                 </Card.Text>
-                                <Card.Link href="#" style={{color:'#78A825'}}>Ver opiniones del cliente</Card.Link>
-                                <Card.Text>$224.000</Card.Text>
-                                <Card.Text>Ver Tallas</Card.Text>
+                                <Card.Text className='tinos14' >
+                                   Accesorios: {info.accesorios} 
+                                </Card.Text>
+                                <Card.Text className='tinos14' style={{padding:'0px 0px 10px 0px'}}>
+                                   Categoria: {info.categoria} 
+                                </Card.Text>
+                                <Card.Link href="#" className='tinos14 link-opiniones' >Ver opiniones del cliente</Card.Link>
+                                <Card.Text className='poppins18' style={{padding:'20px 0px 0px 0px'}}>{info.descuento} ${info.precio}</Card.Text>
+                                <FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} />
+                                <Card.Text className='tinos14' style={{padding:'20px 0px 0px 0px'}}>Ver Tallas
                                 <Form.Control as="select">
                                     <option>35</option>
                                     <option>36</option>
@@ -43,10 +79,23 @@ const Detalle = () =>{
                                     <option>38</option>
                                     <option>39</option>
                                 </Form.Control>
+                                </Card.Text>
+                                
                             </Col>
                             <Col className='column-btn'>
-                                <Button className='buttons'>Agregar al carrito</Button>
-                                <Card.Text>Agregar a WishList</Card.Text>
+
+                                <Link to={{pathname:"./CarritodeCompra",
+                                            state:{state:info}
+                                            }}>
+                                    <Button className='buttons poppins18bold'
+                                    
+                                    >Agregar al carrito
+                                    </Button><br />
+                                    
+
+                                </Link>
+
+                                <Card.Link href="#" className='tinos14 link-opiniones'>Agregar a WishList </Card.Link>
                             </Col>
                         </Row>
                     </Container>

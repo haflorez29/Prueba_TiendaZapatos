@@ -11,39 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.buttons {
-  background: #78A825;
-  border:none;
-}
-.img-borders {
-  background: #FFFFFF;
-  border: 2px solid #B9B9B9;
-  box-sizing: border-box;
-  padding: 30px;
-}
-.img-small {
-  width: 87px;
-  border: 1px solid #B9B9B9;
-  margin: 6px;
-}
-.img-galeria {
-  max-width: 300px;
-  border: 1px solid #B9B9B9;
-  margin-right: 6px;
-}
-.column-small {
-  max-width: 127px;
-  margin-right: 10px;
-}
-.column-text {
-  margin: 0px 10px 0px 10px;
-}
-.column-btn {
-  max-width: 190px;
-  margin-right: 10px;
-}
+
 .poppins22 {
-  font-family: Poppins;
+  font-family: 'Poppins';
 font-style: normal;
 font-weight: normal;
 font-size: 22px;
@@ -51,14 +21,14 @@ line-height: 33px;
 }
 
 .poppins32{
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 600;
 font-size: 32px;
 line-height: 48px;  
 }
 .poppins18 {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -66,7 +36,7 @@ line-height: 27px;
 }
 
 .tinos14{
-  font-family: Tinos;
+  font-family: 'Tinos', serif;
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -74,15 +44,15 @@ line-height: 16px;
 }
 
 .poppins18bold{
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: bold;
-font-size: 18px;
+font-size: 14px;
 line-height: 27px;
 }
 
 .poppins22bold{
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
