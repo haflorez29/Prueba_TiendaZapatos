@@ -28,10 +28,7 @@ function App() {
   },[]);
 
   console.log(zapatos)   
-  const b = zapatos.filter((item, index) => index <= 5);
-  
- 
-  
+  const b = zapatos.filter((item, index) => index <= 5); 
   
   const agregarCarrito = (agregar) => {
     agregar.length = agregar.length + 1
@@ -44,7 +41,6 @@ function App() {
     <div className="App container-fluid">
       <Nav state={zapatos}></Nav>
       <Carusel></Carusel>  
-
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item)=>{
