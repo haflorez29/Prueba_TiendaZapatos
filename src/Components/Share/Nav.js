@@ -9,7 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../../Styles/Nav.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  console.log(props)
   return (
     <nav className="navbar navbar-expand-lg navbar-light colornav">
       <button
@@ -54,9 +55,14 @@ const Navbar = () => {
               <button className="btn btncontenenedor m-1">
                 <FontAwesomeIcon icon={faShoppingBag} className="btncompras"></FontAwesomeIcon>
               </button>
-              <button className="btn btncontenenedor m-1">
-                <FontAwesomeIcon icon={faShoppingCart} className="btncompras"></FontAwesomeIcon>
-              </button>
+              
+                
+                <button className="btn btncontenenedor m-1">
+                  
+                  <FontAwesomeIcon icon={faShoppingCart} className="btncompras"></FontAwesomeIcon>
+                </button>
+              
+              
               <button className="btn btncontenenedor m-1">
                 <FontAwesomeIcon icon={faUser} className="btncompras"></FontAwesomeIcon>
               </button>

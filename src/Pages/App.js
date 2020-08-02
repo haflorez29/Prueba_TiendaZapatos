@@ -5,30 +5,48 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import '../Styles/App.css';
 import Footer from '../Components/Footer';
+import Galeria from '../Components/DetalleProducto/Galeria'
+
 
 function App() {
   const [zapatos, setZapatos] = useState([{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}])
 
+  const [agregar, setAgregar ] = useState([])
+
   useEffect(() => {
     const getUrl = "https://api-jsonserver-now.vercel.app/db.json";
     axios.get(getUrl).then((res) => {
-      // console.log(res.data.zapatos)
+      console.log(res.data.zapatos)
       const data = res.data.zapatos;
       if (data !== null) {
         setZapatos(data);
       }else{
         console.log("");
       }
+      console.log(data)
     });
   },[]);
 
-  console.log(zapatos[2]) 
+  console.log(zapatos)   
   const b = zapatos.filter((item, index) => index <= 5);
+  
+ 
+  
+  
+  const agregarCarrito = (agregar) => {
+    agregar.length = agregar.length + 1
+    setAgregar([...agregar, agregar])
+  }
+  
 
+  console.log(b)
   return (
     <div className="App container-fluid">
-      <Nav></Nav>
+
+      <Nav zapatos = {zapatos}></Nav>
       <Carusel></Carusel>
+      
+
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item)=>{
@@ -42,11 +60,13 @@ function App() {
       }     
         <h3 className="poppins32">Otros Usuarios Compraron</h3>
         {b.map((item)=>{
+          console.log(b)
           return(
             <Link
             to={{
               pathname: '/DetalleProducto',
-              state: { state:item },
+              state: { state:item,
+                        todo:zapatos},
             }}>
             <img src={item.imagen} alt="name"></img>
             </Link>

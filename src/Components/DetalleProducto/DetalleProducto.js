@@ -6,17 +6,25 @@ import Nabvar from '../Share/Nav'
 import OpinionesClientes from './OpinionesClientes'
 
 const DetalleProducto = (state) => {
-    // console.log(state)
+    console.log(state)
 
     const info = state.location.state.state
-    console.log(info)
+    if(state){
+        console.log(info)
+    }
+    const imagenes = state.location.state.todo
+    // console.log(imagenes[0].nombre)
+    
+    
     
     return(
         <div>
+            <Nabvar />
             <Detalle info={info} />
-            <Galeria />
+            <Galeria imagenes = {imagenes}/>
             <Descripcion />
             <OpinionesClientes />
+            
 
         </div>
     )
