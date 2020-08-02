@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../images/Logo.png";
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -9,7 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../../Styles/Nav.css";
 
-const Navbar = () => {
+const Navbar = (state) => {
+
+  const arreglo = state.state
+  console.log(arreglo)
+
+  const [buscar, setBuscar] = useState("")
+
+    console.log(buscar)
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light colornav">
       <button
@@ -19,8 +28,7 @@ const Navbar = () => {
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
 
@@ -39,8 +47,19 @@ const Navbar = () => {
                   type="search"
                   placeholder="Buscar cualquier tipo de zapatos"
                   aria-label="Search"
+                  onChange={(event) => {
+                    // console.log(event.target.value)
+                    setBuscar(event.target.value)
+                  }}
                 />
-                <button className="btn  my-2 my-sm-0 btnbuscar " type="submit">
+                <Link
+                 to={{
+                  pathname: '/Resultados',
+                  state:  {state:arreglo,
+                  busca:buscar }
+                }}>
+                <button className="btn  my-2 my-sm-0 btnbuscar " type="submit"
+                 >
                   <div className="contenedorbtn">
                     <FontAwesomeIcon
                       icon={faSearch}
@@ -48,15 +67,18 @@ const Navbar = () => {
                     ></FontAwesomeIcon>
                   </div>
                 </button>
+                </Link>
               </form>
             </div>
             <div className="d-flex align-items-center ">
               <button className="btn btncontenenedor m-1">
                 <FontAwesomeIcon icon={faShoppingBag} className="btncompras"></FontAwesomeIcon>
               </button>
+              <Link to='/CarritodeCompra'>
               <button className="btn btncontenenedor m-1">
                 <FontAwesomeIcon icon={faShoppingCart} className="btncompras"></FontAwesomeIcon>
               </button>
+              </Link>
               <button className="btn btncontenenedor m-1">
                 <FontAwesomeIcon icon={faUser} className="btncompras"></FontAwesomeIcon>
               </button>
