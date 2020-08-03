@@ -11,13 +11,9 @@ class CarritodeCompra extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      nombre: "",
-      marca: "",
-      descripcion: "",
-      precio: "",
-      imagen: ""
     };
   }
+
   render() {
     return (
       <div>

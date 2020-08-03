@@ -3,6 +3,7 @@ import Nav from '../Components/Share/Nav'
 import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import CarritodeCompra from '../Components/Router/Carrito/CarritodeCompra'
 import '../Styles/App.css';
 import Footer from '../Components/Footer';
 import Galeria from '../Components/DetalleProducto/Galeria'
@@ -30,11 +31,8 @@ function App() {
 
   return (
     <div className="App container-fluid">
-
-      <Nav zapatos = {zapatos}></Nav>
-      <Carusel></Carusel>
-      
-
+      <Nav state={zapatos}></Nav>
+      <Carusel></Carusel>  
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
         {zapatos.map((item)=>{
@@ -59,7 +57,8 @@ function App() {
             </Link>
           )
         })}          
-        </div>       
+        </div> 
+        <CarritodeCompra></CarritodeCompra>      
     </div>
   );
 }
