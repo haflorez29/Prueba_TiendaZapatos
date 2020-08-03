@@ -6,32 +6,35 @@ import Image from 'react-bootstrap/Image'
 
 
 const Galeria = (imagenes) =>{
+    console.log(imagenes)
 
-  console.log(imagenes)
+//   console.log(imagenes)
     
   //poner un random
-  const imagen = imagenes.imagenes.filter((item, index) => index <= 3);
-    console.log(imagen)
+//   const imagen = imagenes.imagenes.filter((item, index) => index <= 3);
+    // console.log(imagen)
 
     return(
-        <section>
-            
+        <section>          
 
        
             <Container className='descripcion'>
             <h3 className='poppins32'> Clientes de este producto también vieron</h3><br/>
-            {imagen.map((it)=>{
-                console.log(imagen)
+            <div className="contenedor">
+            {imagenes.imagenes.map((it)=>{
+                // console.log(imagen)
                 return(
                     <Link
                     to={{
                     pathname: '/DetalleProducto',
-                    state: { state:it},
+                    state: { state:it,
+                    todo: imagenes.imagenes},
                     }}>
                     <img src={it.imagen} alt="name"></img>
                     </Link>
                 )
                 })}
+                </div>
                
                
                

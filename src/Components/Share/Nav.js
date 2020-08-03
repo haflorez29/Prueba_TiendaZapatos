@@ -13,11 +13,11 @@ import "../../Styles/Nav.css";
 const Navbar = (state) => {
 
   const arreglo = state.state
-  console.log(arreglo)
+  // console.log(arreglo)
 
   const [buscar, setBuscar] = useState("")
 
-    console.log(buscar)
+    // console.log(buscar)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light colornav">
@@ -90,23 +90,23 @@ const Navbar = (state) => {
                 Catalogo <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link poppins22 " href="/" id="colorletra">
-                Niños <span className="sr-only">(current)</span>
+            <li className="nav-item ">
+              <a className="nav-link poppins22 disabled " href="/" id="colorletra">
+                Niños <span className="sr-only ">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="/">
+              <a className="nav-link poppins22   disabled" id="colorletra" href="/">
                 Caballero <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="/">
+              <a className="nav-link poppins22  disabled" id="colorletra" href="/">
                 Deportivo<span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link poppins22 " id="colorletra" href="/">
+              <a className="nav-link poppins22   disabled" id="colorletra" href="/">
                 Regalos <span className="sr-only">(current)</span>
               </a>
             </li>

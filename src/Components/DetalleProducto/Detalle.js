@@ -15,29 +15,7 @@ import { Link } from 'react-router-dom';
 
 
 const Detalle = ({info}) =>{
-    console.log(info)
 
-    const [datosProducto, setDatosProducto] = useState({
-        imagen: '',
-        nombre: '',
-        Descripción : '',
-        accesorios: '',
-        categoria: '',
-        descuento: ''
-    })
-
-    const [newAdd, setNewAdd] = useState(datosProducto)
-    
-    const handleInputChange = (info) => {
-        console.log(info)
-        setNewAdd({
-            ...datosProducto,
-             
-        })
-    }
-    const addCarrito = ()=> {
-        console.log(newAdd)
-    }
 
     return(
         <section>

@@ -9,14 +9,10 @@ const DetalleProducto = (state) => {
     console.log(state)
 
     const info = state.location.state.state
-    if(state){
-        console.log(info)
-    }
+
     const imagenes = state.location.state.todo
-    // console.log(imagenes[0].nombre)
-    
-    
-    
+    console.log(imagenes)
+
     return(
         <div>
             <Nabvar />
@@ -24,9 +20,8 @@ const DetalleProducto = (state) => {
             <Galeria imagenes = {imagenes}/>
             <Descripcion />
             <OpinionesClientes />
-            
-
         </div>
     )
 }
+
 export default DetalleProducto;

@@ -5,41 +5,26 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import '../Styles/App.css';
 import Footer from '../Components/Footer';
-import Galeria from '../Components/DetalleProducto/Galeria'
 
 
 function App() {
   const [zapatos, setZapatos] = useState([{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}])
 
-  const [agregar, setAgregar ] = useState([])
-
   useEffect(() => {
     const getUrl = "https://api-jsonserver-now.vercel.app/db.json";
     axios.get(getUrl).then((res) => {
-      console.log(res.data.zapatos)
+      // console.log(res.data.zapatos)
       const data = res.data.zapatos;
       if (data !== null) {
         setZapatos(data);
       }else{
         console.log("");
       }
-      console.log(data)
     });
   },[]);
-
-  console.log(zapatos)   
+  
   const b = zapatos.filter((item, index) => index <= 5);
-  
  
-  
-  
-  const agregarCarrito = (agregar) => {
-    agregar.length = agregar.length + 1
-    setAgregar([...agregar, agregar])
-  }
-  
-
-  console.log(b)
   return (
     <div className="App container-fluid">
       <Nav state={zapatos}></Nav>
@@ -47,18 +32,29 @@ function App() {
 
       <div className="pt-4">
       <h3 className="poppins32">Artículos Recomendados</h3>
+     
+      <div className="contenedor">
         {zapatos.map((item)=>{
           if(item.descuento === "promocion"){
-          return(            
+          return(  
+            <Link
+            to={{
+              pathname: '/DetalleProducto',
+              state: { state:item,
+                        todo:zapatos,
+                    },
+            }}>          
             <React.Fragment>
-                <img src={item.imagen}alt={item.nombre} className="scroll"></img>           
+                <img src={item.imagen}alt={item.nombre} className="border"></img>           
             </React.Fragment>
+            </Link>
           )
         }})
-      }     
+      } 
+      </div>    
         <h3 className="poppins32">Otros Usuarios Compraron</h3>
+        <div className="contenedor">
         {b.map((item)=>{
-          console.log(b)
           return(
             <Link
             to={{
@@ -66,11 +62,13 @@ function App() {
               state: { state:item,
                         todo:zapatos},
             }}>
-            <img src={item.imagen} alt="name"></img>
+            <img src={item.imagen} alt="name" className="border"></img>
             </Link>
           )
-        })}          
-        </div>       
+        })}  
+        </div>        
+        </div>   
+        <Footer></Footer>    
     </div>
   );
 }
