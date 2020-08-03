@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState } from 'react';
 import Detalle from './Detalle'
 import Galeria from './Galeria'
 import Descripcion from './Descripcion'
@@ -6,26 +6,40 @@ import Nabvar from '../Share/Nav'
 import OpinionesClientes from './OpinionesClientes'
 
 const DetalleProducto = (state) => {
-    console.log(state)
+    // console.log(state)
 
     const info = state.location.state.state
-    if(state){
-        console.log(info)
-    }
+    
     const imagenes = state.location.state.todo
     // console.log(imagenes[0].nombre)
-    
-    
+
+    const [orderState, setOrderState] = useState({})
+
+    const addToOrder = (info)=>{
+        
+        const order = {...orderState}
+       
+        if (order[info]){
+            console.log(order[info])
+            order[info]=order[info]+1;
+        } else {
+            order[info] = 1
+        }
+
+        // order[info] = order[info] + 1 || 1;
+
+        setOrderState({order})
+        console.log(order)
+    }
+    // console.log(addToOrder)
     
     return(
         <div>
             <Nabvar />
-            <Detalle info={info} />
+            <Detalle  info={info} addToOrder={addToOrder}/>
             <Galeria imagenes = {imagenes}/>
             <Descripcion />
             <OpinionesClientes />
-            
-
         </div>
     )
 }

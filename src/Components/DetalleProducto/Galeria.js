@@ -2,56 +2,36 @@ import React from 'react';
 import Container from  'react-bootstrap/Container'
 import {Link} from 'react-router-dom'
 import Image from 'react-bootstrap/Image'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 
 
 const Galeria = (imagenes) =>{
-
-  console.log(imagenes)
-    
+//   console.log(imagenes)
   //poner un random
-  const imagen = imagenes.imagenes.filter((item, index) => index <= 3);
-    console.log(imagen)
-
+//  Math.random(index)
+    // const max = 22
+    // const min = 19
+    const imagen = imagenes.imagenes//.filter((item, index) => (min<=index)&(index <= max) );
+    // console.log(imagen)
     return(
         <section>
-            
-
-       
             <Container className='descripcion'>
             <h3 className='poppins32'> Clientes de este producto también vieron</h3><br/>
             {imagen.map((it)=>{
-                console.log(imagen)
+                // console.log(imagen)
                 return(
                     <Link
                     to={{
                     pathname: '/DetalleProducto',
                     state: { state:it},
                     }}>
-                    <img src={it.imagen} alt="name"></img>
+                        <Image src={it.imagen} className="imagenes-galeria" /> 
                     </Link>
                 )
                 })}
-               
-               
-               
-                {/* <Row>
-                    <Col >
-                    <Image src="https://i.ibb.co/nwXjQzc/converse.jpg" style={{width:'270px', height:'170px', border:'1px solid  #B9B9B9 '}}/>
-                    </Col>
-                    <Col >
-                    <Image src="https://i.ibb.co/nwXjQzc/converse.jpg" style={{width:'270px', height:'170px', border:'1px solid  #B9B9B9 '}}/>
-                    </Col>
-                    <Col >
-                    <Image src="https://i.ibb.co/nwXjQzc/converse.jpg" style={{width:'270px', height:'170px', border:'1px solid   #B9B9B9' }}/>
-                    </Col>
-                    <Col >
-                    <Image src="https://i.ibb.co/nwXjQzc/converse.jpg" style={{width:'270px', height:'170px', border:'1px solid   #B9B9B9' }}/>
-                    </Col>
-                    
-                </Row> */}
-                
-                </Container>
+            </Container>
         </section>
     )
 }
