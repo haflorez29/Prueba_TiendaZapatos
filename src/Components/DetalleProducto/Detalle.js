@@ -14,8 +14,13 @@ import {
 import { Link } from 'react-router-dom';
 
 
-const Detalle = ({info}) =>{
+const Detalle = ({info, addToOrder}) =>{
+    const infoTallas = info.tallas
+    console.log(infoTallas)
 
+    const handleClick= (info) => {
+        addToOrder(info.nombre)
+    }
 
     return(
         <section>
@@ -23,7 +28,7 @@ const Detalle = ({info}) =>{
                 <Card.Body>
                     <Container fluid>
                         <Row>
-                            <Col className='column-small poppins22' fluid>
+                            <Col className='column-small poppins22' xs md="auto" fluid>
                                 <Card.Img src={ info.imagen } className='img-small' /><br />
                                 <Card.Img src={ info.imagen } className='img-small' /><br />
                                 <Card.Img src={ info.imagen } className='img-small' /><br />
@@ -37,7 +42,7 @@ const Detalle = ({info}) =>{
                             <Col className='column-text' fluid>
                             <Card.Title className='poppins22'>{info.nombre}</Card.Title>
                             <Card.Subtitle className='tinos14' style={{padding:'0px 0px 20px 0px'}}>{info.marca}</Card.Subtitle>
-                                <Card.Text className='tinos14' style={{padding:'0px 0px 0px 0px'}}>
+                                <Card.Text className='tinos14' >
                                    {info.Descripción}   
                                 </Card.Text>
                                 <Card.Text className='tinos14' >
@@ -51,27 +56,32 @@ const Detalle = ({info}) =>{
                                 <FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} /><FontAwesomeIcon style={{color:'#22780D'}} icon={faStar} />
                                 <Card.Text className='tinos14' style={{padding:'20px 0px 0px 0px'}}>Ver Tallas
                                 <Form.Control as="select">
-                                    <option>35</option>
-                                    <option>36</option>
-                                    <option>37</option>
-                                    <option>38</option>
-                                    <option>39</option>
+                                    {
+                                        infoTallas.map((inf,index) =>{
+                                            console.log(inf)
+                                            return (
+                                             <option >{inf[35]}</option>
+                                            )
+                                        }
+                                        )
+                                    }
+                                    
                                 </Form.Control>
                                 </Card.Text>
                                 
                             </Col>
                             <Col className='column-btn'>
 
-                                <Link to={{pathname:"./CarritodeCompra",
+                                {/* <Link to={{pathname:"./CarritodeCompra",
                                             state:{state:info}
-                                            }}>
+                                            }}> */}
                                     <Button className='buttons poppins18bold'
-                                    
+                                    onClick={handleClick}
                                     >Agregar al carrito
                                     </Button><br />
                                     
 
-                                </Link>
+                                {/* </Link> */}
 
                                 <Card.Link href="#" className='tinos14 link-opiniones'>Agregar a WishList </Card.Link>
                             </Col>
