@@ -2,15 +2,16 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import "../../Styles/Card.css";
 
-const Card = ({nombre, precio, imagen, descripcion, item}) => {
+const Card = ({nombre, precio, imagen, descripcion, item, imagenes}) => {
+
   const items = item
   return (
     <div className="card card-individual mb-3  ">
       <div className="row no-gutters">
-        <section className="col-md-2 ">
+        <section className="col-md-3 ">
           <img src={imagen} className="card-img imageShoes" alt="imagen"></img>
         </section>
-        <section className="col-md-6 card-body pt-0">
+        <section className="col-md-5 card-body pt-0 ml-1">
           <h3 className="poppins22 card-title">{nombre}</h3>
           <small className="tinos14">{nombre}</small>
           <p className="poppins18 card-text">{precio}</p>
@@ -20,12 +21,11 @@ const Card = ({nombre, precio, imagen, descripcion, item}) => {
         <section className="col-md-3 d-flex flex-column align-items-end ">
           <Link 
           to={{
-            pathname: '/CarritodeCompra',
-            state:  {state: items }
+            pathname: '/DetalleProducto',
+            state:  {state: items, todo: imagenes }
           }}>
-          <button className="poppins18bold botonAgregar rounded">Agregar al carrito</button>
+          <button className="poppins18bold botonAgregar rounded">Ver Detalle del producto</button>
           </Link>
-          <button className="btn btn-link botonWish">Agregar a Wishlist</button>
         </section>
       </div>
     </div>

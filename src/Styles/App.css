@@ -57,3 +57,9 @@
     padding: 5%;
     text-align: center;
 }
+
+.contenedor{
+    display: flex;
+    overflow: scroll;
+    width: 100vw;
+}
