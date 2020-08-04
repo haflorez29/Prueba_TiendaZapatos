@@ -1,4 +1,4 @@
-***Bienvenido
+//Bienvenido
 
 Acá podrás visualizar la página con el diseño.
 
