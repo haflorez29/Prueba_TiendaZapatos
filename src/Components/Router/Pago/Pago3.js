@@ -36,13 +36,13 @@ class Pago3 extends Component {
           </div>
         </nav>
         <h1 className="mt-5 ml-4">Revisa tu pedido</h1>
-        <div className="d-flex flex-row ml-4 mt-3 mb-4">
-          <div className="col-3">
+        <div className="row ml-3 mt-3 mb-4">
+          <div className="col-12 col-md-3">
             <h5>Dirección de envío</h5>
             <p>Texto 14 texto 13, cr 51 #29-09</p>
             <a href="/">Cambiar</a>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-md-3 mt-2 mt-md-0">
             <h5>Método de pago</h5>
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -51,14 +51,14 @@ class Pago3 extends Component {
             </p>
             <a href="/">Cambiar</a>
           </div>
-          <div className="col-3">
+          <div className="col-12 col-md-3 mt-2 mt-md-0">
             <h5>Tarjeta de promoción</h5>
             <div className="input-group">
               <input type="text" className="form-control" placeholder="Texto" />
               <button className="btn btn-success">Aplicar</button>
             </div>
           </div>
-          <div className="col-3 text-center">
+          <div className="col-12 col-md-3 mt-2 mt-md-0 text-center">
             <Link to="/Confirmacion">
               <button className="btn btn-success" type="button" value="Input">
                 Continuar

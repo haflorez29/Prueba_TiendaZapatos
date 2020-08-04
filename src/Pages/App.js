@@ -3,7 +3,6 @@ import Nav from '../Components/Share/Nav'
 import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
-import CarritodeCompra from '../Components/Router/Carrito/CarritodeCompra'
 import '../Styles/App.css';
 import Footer from '../Components/Footer';
 
@@ -19,7 +18,7 @@ function App() {
       if (data !== null) {
         setZapatos(data);
       }else{
-        console.log("");
+        //console.log("");
       }
     });
   },[]);

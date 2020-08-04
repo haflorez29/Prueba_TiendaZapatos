@@ -20,7 +20,7 @@ class Pago1 extends Component {
             <img src={Logo} alt="logo"></img>
           </a>
           <div className="iconos_nav">
-          <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center col-sm-12">
             <div className="circle_active">
               <FontAwesomeIcon icon={faCar}></FontAwesomeIcon>
             </div>
@@ -35,8 +35,8 @@ class Pago1 extends Component {
           </div>
           </div>
         </nav>
-        <div className="d-flex flex-row">
-          <div className="col-6 mt-5">
+        <div className="row">
+          <div className="col-12 col-md-6 mt-5">
             <div className="mb-3 ml-4">
               <h1>Elige opciones de envío</h1>
               <h4>Envío 1 de 1</h4>
@@ -59,7 +59,7 @@ class Pago1 extends Component {
               <a href="/">Eliminar</a>
             </div>
           </div>
-          <div className="d-block mt-5 col-3">
+          <div className="d-block col-12 col-md-3 mt-5 ml-2 ml-md-0">
             <h4>Elegir velocidad de envío</h4>
             <h5>¡Entrega garantizada!</h5>
             <label>
@@ -78,7 +78,7 @@ class Pago1 extends Component {
               <input type="radio" name="envio" /> 1 semana
             </label>
           </div>
-          <div className="col-3 mt-5">
+          <div className="col-md-3 col-12 text-center mt-5">
             <Link to="/Pago2">
               <button className="btn btn-success" type="button" value="Input">
                 Continuar

@@ -40,8 +40,15 @@
     margin-left: 30%;
     margin-right: 30%;
 }
+@media only screen and (max-width: 600px) {
+    .iconos_nav {
+      position: relative;
+      width: 100%;
+      margin: 0px;
+    }
+  }
 .linea_metodos_pago{
-    width: 500px;
+    width: 50%;
     height: 1px;
     background-color: green;
     margin-top: 10px;
