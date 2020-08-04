@@ -12,12 +12,40 @@ class CarritodeCompra extends Component {
     super(props);
     this.state = {
     };
+    console.log(props)
+
   }
 
   render() {
+    const pedidoArray = []
+    const order = this.props.location.state.todo    
+    const pedido = this.props.location.state.state
+    const pedidoId= Object.keys(pedido)
+    // console.log(pedidoId)
+
+
+
     return (
       <div>
         <Navbar></Navbar>
+        {pedidoId.map((item)=>{
+          console.log(item)
+          // console.log(order[item].nombre)
+          order.map((key)=>{
+            if(item==key.id){
+              console.log(key)
+            }            
+          })     
+        })
+
+            // pedidoId.forEach((key)=>{
+            //   order.map((item)=>{
+            //   if(item.id===key){
+            //     console.log(order[item.length])
+            //   }
+            // })
+            // })     
+        }
         <h1 className="">Texto 34</h1>
         <div className="d-flex flex-row">
         <img

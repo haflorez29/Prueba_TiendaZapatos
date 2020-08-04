@@ -14,12 +14,14 @@ import {
 import { Link } from 'react-router-dom';
 
 
-const Detalle = ({info, addToOrder}) =>{
+const Detalle = ({info, addToOrder, order, todo}) =>{
     const infoTallas = info.tallas
-    console.log(infoTallas)
+    // console.log(todo)
+    // console.log(addToOrder("heidy"))
+    // console.log(info)
 
-    const handleClick= (info) => {
-        addToOrder(info.nombre)
+    const handleClick= () => {
+        addToOrder(info)
     }
 
     return(
@@ -58,7 +60,7 @@ const Detalle = ({info, addToOrder}) =>{
                                 <Form.Control as="select">
                                     {
                                         infoTallas.map((inf,index) =>{
-                                            console.log(inf)
+                                            // console.log(inf)
                                             return (
                                              <option >{inf[35]}</option>
                                             )
@@ -72,18 +74,20 @@ const Detalle = ({info, addToOrder}) =>{
                             </Col>
                             <Col className='column-btn'>
 
-                                {/* <Link to={{pathname:"./CarritodeCompra",
-                                            state:{state:info}
-                                            }}> */}
+                              
                                     <Button className='buttons poppins18bold'
                                     onClick={handleClick}
                                     >Agregar al carrito
-                                    </Button><br />
-                                    
+                                    </Button><br />                                   
 
-                                {/* </Link> */}
+                             
+                                <Link to={{pathname:"./CarritodeCompra",
+                                            state:{state:order,
+                                            todo:todo}
+                                            }}>
 
-                                <Card.Link href="#" className='tinos14 link-opiniones'>Agregar a WishList </Card.Link>
+                                <Card.Link href="#" className='tinos14 link-opiniones'>Ir al carrito </Card.Link>
+                                </Link>
                             </Col>
                         </Row>
                     </Container>

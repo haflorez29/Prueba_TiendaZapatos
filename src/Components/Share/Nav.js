@@ -11,7 +11,7 @@ import {
 import "../../Styles/Nav.css";
 
 const Navbar = (state) => {
-  console.log(state)
+  // console.log(state)
 
 
   const arreglo = state.state

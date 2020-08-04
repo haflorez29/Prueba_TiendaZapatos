@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row'
 
 
 const Galeria = (imagenes) =>{
-    console.log(imagenes)
+    // console.log(imagenes)
 
 //   console.log(imagenes)
     
