@@ -13,11 +13,11 @@ import "../../Styles/Nav.css";
 const Navbar = (state) => {
 
   const arreglo = state.state
-  console.log(arreglo)
+  //console.log(arreglo)
 
   const [buscar, setBuscar] = useState("")
 
-    console.log(buscar)
+    //console.log(buscar)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light colornav">

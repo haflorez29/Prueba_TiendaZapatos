@@ -36,13 +36,15 @@ class Pago2 extends Component {
           </div>
           </div>
         </nav>
-        <div className="mt-5 ml-4">
+        <div className="row">
+        <div className="col-md-9">
+        <div className="mt-5 ml-3">
         <h1>Tus tarjetas de crédito</h1>
         <h4 className="mt-4">Tarjeta de crédito</h4>
         </div>
-        <div className="d-flex flex-row ml-4 mt-3">
-        <div className="col-3 input-group">
-          <label className="mr-1">
+        <div className="row ml-2 mt-4">
+        <div className="col-12 col-md-4 input-group">
+          <label>
             <input type="checkbox" className="m_checkbox" />
             <FontAwesomeIcon
               className="icono"
@@ -61,20 +63,15 @@ class Pago2 extends Component {
                 Button
               </button>
         </div>
-        <div className="col-3 text-center">
+        <div className="col-12 col-md-4 text-center">
             <h4>Nombre</h4>
             <p>Daniela Garza</p>
         </div>
-        <div className="col-3 text-center">
+        <div className="col-12 col-md-4 text-center">
             <h4>Vencimiento</h4>
             <p>Fecha</p>
         </div>
-        <div className="col-3 text-center">
-        <Link to='/Pago3'><button className="btn btn-success" type="button" value="Input">
-            Continuar
-          </button></Link>
-          <p>El pedido en un click no está disponible</p>
-        </div>
+        
         </div>
         <div className="ml-4 mt-4">
             <h4>Más opciones de pago</h4>
@@ -127,6 +124,14 @@ class Pago2 extends Component {
             </label>
             <br></br>
             <a href="/">Agregar tarjeta</a>
+        </div>
+        </div>
+        <div className="col-12 col-md-3 text-center m-auto">
+        <Link to='/Pago3'><button className="btn btn-success" type="button" value="Input">
+            Continuar
+          </button></Link>
+          <p>El pedido en un click no está disponible</p>
+        </div>
         </div>
         <Footer></Footer>
       </div>

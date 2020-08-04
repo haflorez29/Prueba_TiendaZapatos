@@ -3,7 +3,6 @@ import Nav from '../Components/Share/Nav'
 import Carusel from '../Components/Home/Carusel'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
-import CarritodeCompra from '../Components/Router/Carrito/CarritodeCompra'
 import '../Styles/App.css';
 import Footer from '../Components/Footer';
 import Galeria from '../Components/DetalleProducto/Galeria'
@@ -17,18 +16,18 @@ function App() {
   useEffect(() => {
     const getUrl = "https://api-jsonserver-now.vercel.app/db.json";
     axios.get(getUrl).then((res) => {
-      console.log(res.data.zapatos)
+      //console.log(res.data.zapatos)
       const data = res.data.zapatos;
       if (data !== null) {
         setZapatos(data);
       }else{
-        console.log("");
+        //console.log("");
       }
-      console.log(data)
+      //console.log(data)
     });
   },[]);
 
-  console.log(zapatos)   
+  //console.log(zapatos)   
   const b = zapatos.filter((item, index) => index <= 5); 
   
   const agregarCarrito = (agregar) => {
@@ -37,7 +36,7 @@ function App() {
   }
   
 
-  console.log(b)
+  //console.log(b)
   return (
     <div className="App container-fluid">
       <Nav state={zapatos}></Nav>
@@ -55,7 +54,7 @@ function App() {
       }     
         <h3 className="poppins32">Otros Usuarios Compraron</h3>
         {b.map((item)=>{
-          console.log(b)
+          //console.log(b)
           return(
             <Link
             to={{
@@ -67,8 +66,7 @@ function App() {
             </Link>
           )
         })}          
-        </div> 
-        <CarritodeCompra></CarritodeCompra>      
+        </div>    
     </div>
   );
 }
