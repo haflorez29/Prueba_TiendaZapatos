@@ -13,4 +13,8 @@ Luego nos dirigimos dentro del proyecto con la consola ya sea de Windows o Git y
 
 #### npm start
 
-Después de instalar todos los paquetes, ejecutamos el comando npm start para ver la página desplegada en el localhost.
+Después de instalar todos los paquetes, ejecutamos el comando npm start para ver la página desplegada en el localhost
+
+#### endpoint
+
+https://prueba-tienda-zapatos-three.vercel.app/
